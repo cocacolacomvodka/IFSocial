@@ -12,6 +12,14 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '/www/src/html/index.html'))
 })
 
+app.get('/login.html', (req, res) => {
+    res.sendFile(path.join(__dirname, '/www/src/html/login.html'))
+})
+
+app.get('/register.html', (req, res) => {
+    res.sendFile(path.join(__dirname, '/www/src/html/register.html'))
+})
+
 /*Inicia a aplicação*/
 app.listen(port)
 console.log("Aplicação rodando em 'http://localhost:"+port+"'")
