@@ -1,0 +1,129 @@
+html {
+    height: 100%;
+    background-color: #252525;
+}
+
+/*formularios de login e registrar*/
+
+#register {
+    margin: 0 auto;
+    font-size: large;
+    font-family: monospace;
+    height: fit-content;
+    width: fit-content;
+
+}
+
+#login {
+    margin: 0 auto;
+    font-size: large;
+    font-family: monospace;
+    height: fit-content;
+    width: fit-content;
+}
+
+#formreg {
+    background-color: #5feb72;
+    height: fit-content;
+    width: fit-content;
+    font-family: monospace;
+    outline-style: inherit;
+}
+
+#formlog {
+    background-color: #5feb72;
+    height: fit-content;
+    width: fit-content;
+    font-family: monospace;
+    outline-style: inherit;
+}
+
+/*botoes para ir para formularios*/
+
+#button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #00782b;
+    font-family: monospace;
+    font-size: medium;
+    border: none;
+    cursor: pointer;
+    height: fit-content;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+#ShowRegister {
+    color: #00782b;
+    font-family: monospace;
+    font-size: medium;
+    border: none;
+    cursor: pointer;
+    height: fit-content;
+    width: fit-content;
+    margin: 10pt;
+}
+
+#ShowLogin {
+    color: #00782b;
+    font-family: monospace;
+    font-size: medium;
+    border: none;
+    cursor: pointer;
+    height: fit-content;
+    width: fit-content;
+    margin: 10pt;
+}
+
+/*cabecario*/
+
+#cabecario {
+    margin: 0 auto;
+    font-size: 100pt;
+    height: fit-content;
+    width: fit-content;
+    text-align-last: center;
+}
+
+#ifsocial {
+    font-size: 50pt;
+    color: #ffffff;
+    margin-bottom: auto;
+}
+
+#registrotexttitle {
+    font-size: 30pt;
+    color: #ffffff;
+    align-self: center;
+}
+
+#logintexttitle {
+    font-size: 30pt;
+    color: #ffffff;
+    align-self: center;
+}
+
+/*formularios*/
+
+fieldset {
+    margin: 0 auto;
+    height: fit-content;
+    width: fit-content;
+}
+
+h1 {
+    font-size: xx-large;
+    font-family: monospace;
+    vertical-align: middle;
+    align-self: center;
+}
+
+li {
+    align-content: center;
+}
+
+h2 {
+    font-size: medium;
+    font-family: monospace;
+}
