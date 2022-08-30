@@ -1,21 +1,51 @@
 <!DOCTYPE=html />
 <html lang="pt">
-<!--cabeçario-->
-<link rel="stylesheet" href="../css/site.css" />
+
 <head>
-    <div id="cabecario">
-        <h1 id="ifsocial">
-            IFSocial
-        </h1>
-    </div>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/css/site.css">
+    <title>IFSocial</title>
 </head>
 
+<!--cabeçario-->
+<div id="cabecario">
+    <h1 id="ifsocial">
+        IFSocial
+    </h1>
+</div>
+
 <body>
+    <!--form de login-->
+    <div id="login">
+        <form method="post" action="form.java" id="formlog">
+            <fieldset>
+                <h4 class="account">Logar</h4>
+                <ul>
+
+                    <li>
+                        <!--Inserir Email-->
+                        <label for="email">E mail_______</label>
+                        <input type="email" id="email" name="email" class="large" />
+                    </li>
+                    <li>
+                        <!--Inserir senha-->
+                        <label for="senha">Senha________</label>
+                        <input type="password" id="senha" name="senha" class="large" />
+                    </li>
+                </ul>
+                <input type="submit" class="login_profile" value="Logar conta">
+            </fieldset>
+    </div>
     <!--Botões de seleção login ou Registro-->
     <div id="button">
-        <button onclick="window.location = document.location.origin+'/register.html'" id="ShowRegister">Register</button>
-        <br>
-        <button onclick="window.location = document.location.origin+'/login.html'" id="ShowLogin">Login</button>
+        <h2>
+            Não logado ainda?
+        </h2>
+        <a href="/views/register.html">
+        <button id="ShowRegister">Register</button>
+        </a>
     </div>
 
 </html>

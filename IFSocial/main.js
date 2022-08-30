@@ -9,15 +9,15 @@ const app = express()
 const port = process.env.PORT || 8080
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '/www/src/html/index.html'))
+    res.sendFile(path.join(__dirname, '/views/index.html'))
 })
 
 app.get('/login.html', (req, res) => {
-    res.sendFile(path.join(__dirname, '/www/src/html/login.html'))
+    res.sendFile(path.join(__dirname, '/views/login.html'))
 })
 
 app.get('/register.html', (req, res) => {
-    res.sendFile(path.join(__dirname, '/www/src/html/register.html'))
+    res.sendFile(path.join(__dirname, '/views/register.html'))
 })
 
 /*Inicia a aplicação*/

@@ -1,6 +1,221 @@
+/*variáveis*/
+:root{
+    --green:#00782b;
+    --greydark: #4e4e4e;
+    --grey: #9e9e9e,
+}
+/*webkit*/
+
+@-webkit-keyframes shadow-pop-bl {
+    0% {
+        -webkit-box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+        box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+        -webkit-transform: translateX(0) translateY(0);
+        transform: translateX(0) translateY(0);
+    }
+
+    100% {
+        -webkit-box-shadow: -1px 1px #3e3e3e, -2px 2px #3e3e3e, -3px 3px #3e3e3e, -4px 4px #3e3e3e, -5px 5px #3e3e3e, -6px 6px #3e3e3e, -7px 7px #3e3e3e, -8px 8px #3e3e3e;
+        box-shadow: -1px 1px #3e3e3e, -2px 2px #3e3e3e, -3px 3px #3e3e3e, -4px 4px #3e3e3e, -5px 5px #3e3e3e, -6px 6px #3e3e3e, -7px 7px #3e3e3e, -8px 8px #3e3e3e;
+        -webkit-transform: translateX(8px) translateY(-8px);
+        transform: translateX(8px) translateY(-8px);
+    }
+}
+
+@keyframes shadow-pop-bl {
+    0% {
+        -webkit-box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+        box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+        -webkit-transform: translateX(0) translateY(0);
+        transform: translateX(0) translateY(0);
+    }
+
+    100% {
+        -webkit-box-shadow: -1px 1px #3e3e3e, -2px 2px #3e3e3e, -3px 3px #3e3e3e, -4px 4px #3e3e3e, -5px 5px #3e3e3e, -6px 6px #3e3e3e, -7px 7px #3e3e3e, -8px 8px #3e3e3e;
+        box-shadow: -1px 1px #3e3e3e, -2px 2px #3e3e3e, -3px 3px #3e3e3e, -4px 4px #3e3e3e, -5px 5px #3e3e3e, -6px 6px #3e3e3e, -7px 7px #3e3e3e, -8px 8px #3e3e3e;
+        -webkit-transform: translateX(8px) translateY(-8px);
+        transform: translateX(8px) translateY(-8px);
+    }
+}
+
+@-webkit-keyframes text-pop-up-top {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        text-shadow: none;
+    }
+
+    100% {
+        -webkit-transform: translateY(-50px);
+        transform: translateY(-50px);
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
+    }
+}
+
+@keyframes text-pop-up-top {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-transform-origin: 10% 10%;
+        transform-origin: 10% 10%;
+        text-shadow: none;
+    }
+
+    100% {
+        -webkit-transform: translateY(-1px);
+        transform: translateY(-1px);
+        -webkit-transform-origin: 10% 10%;
+        transform-origin: 10% 10%;
+        text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
+    }
+}
+
+
+/*fundo*/
 html {
     height: 100%;
-    background-color: #252525;
+    background-color: rgb(29, 32, 32);
+}
+
+/*cabecario*/
+
+#cabecario {
+    margin: 0 auto;
+    font-size: 100pt;
+    height: fit-content;
+    width: fit-content;
+    text-align-last: center;
+    margin-top: 50px;
+}
+
+#ifsocial {
+    font-size: 50pt;
+    color: #ffffff;
+    margin-bottom: auto;
+}
+
+#registrotexttitle {
+    font-size: 30pt;
+    color: #ffffff;
+    align-self: center;
+}
+
+#logintexttitle {
+    font-size: 30pt;
+    color: #ffffff;
+    align-self: center;
+}
+
+.header{
+    height: wrap;
+    display: flex;
+    background-color: var(--green);
+    margin: 0px;
+    border-radius: 25px;
+    position:sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.header .headertitle{
+    width: fit-content;
+    height: 50px;
+    margin-left: 10px;
+    margin-right: auto;
+    margin-bottom: 10px;
+
+}
+
+.header .headerbuttons{
+    width: fit-content wrap;
+    height: 50px;
+    margin-left: auto;
+    margin-right: 20px;
+    align-self: right;
+}
+
+.header .headerimg{
+    height: 50px;
+    width: 50px;
+    margin-top: 5px;
+    background: var(--green);
+}
+
+.header .headerimg:hover{
+    margin-top: 5px;
+    background: var(--green);
+    -webkit-animation: shadow-pop-bl 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+    animation: shadow-pop-bl 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+    -webkit-animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    
+}
+
+/*botoes para ir para formularios*/
+
+#button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--green);
+    font-family: monospace;
+    font-size: medium;
+    border: none;
+    cursor: pointer;
+    height: fit-content;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
+#ShowRegister {
+    color: lime;
+    font-family: monospace;
+    font-size: 20pt;
+    border: none;
+    cursor: pointer;
+    height: 50px;
+    width: 200px;
+    margin: 10pt;
+    border-radius: 30px;
+    background-color: grey;
+}
+
+#ShowRegister:hover {
+    transform: scale(1.05);
+    color: #00782b;
+    background-color: white;
+    -webkit-animation: shadow-pop-bl 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+    animation: shadow-pop-bl 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+    -webkit-animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+#ShowLogin {
+    color: lime;
+    font-family: monospace;
+    font-size: 20pt;
+    border: none;
+    cursor: pointer;
+    height: 50px;
+    width: 200px;
+    margin: 10pt;
+    border-radius: 30px;
+    background-color: grey;
+}
+
+#ShowLogin:hover {
+    transform: scale(1.05);
+    color: #00782b;
+    background-color: white;
+    -webkit-animation: shadow-pop-bl 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+    animation: shadow-pop-bl 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+    -webkit-animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 /*formularios de login e registrar*/
@@ -23,85 +238,22 @@ html {
 }
 
 #formreg {
-    background-color: #5feb72;
+    color: #ffffff;
     height: fit-content;
     width: fit-content;
     font-family: monospace;
     outline-style: inherit;
+    border-radius: 15px;
+    border-color: #00782b;
 }
 
 #formlog {
-    background-color: #5feb72;
-    height: fit-content;
-    width: fit-content;
-    font-family: monospace;
-    outline-style: inherit;
-}
-
-/*botoes para ir para formularios*/
-
-#button {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #00782b;
-    font-family: monospace;
-    font-size: medium;
-    border: none;
-    cursor: pointer;
-    height: fit-content;
-    width: fit-content;
-    margin: 0 auto;
-}
-
-#ShowRegister {
-    color: #00782b;
-    font-family: monospace;
-    font-size: medium;
-    border: none;
-    cursor: pointer;
-    height: fit-content;
-    width: fit-content;
-    margin: 10pt;
-}
-
-#ShowLogin {
-    color: #00782b;
-    font-family: monospace;
-    font-size: medium;
-    border: none;
-    cursor: pointer;
-    height: fit-content;
-    width: fit-content;
-    margin: 10pt;
-}
-
-/*cabecario*/
-
-#cabecario {
-    margin: 0 auto;
-    font-size: 100pt;
-    height: fit-content;
-    width: fit-content;
-    text-align-last: center;
-}
-
-#ifsocial {
-    font-size: 50pt;
     color: #ffffff;
-    margin-bottom: auto;
-}
-
-#registrotexttitle {
-    font-size: 30pt;
-    color: #ffffff;
-    align-self: center;
-}
-
-#logintexttitle {
-    font-size: 30pt;
-    color: #ffffff;
-    align-self: center;
+    height: fit-content;
+    width: fit-content;
+    font-family: monospace;
+    border-style: none;
+    margin-top: 100px;
 }
 
 /*formularios*/
@@ -110,6 +262,8 @@ fieldset {
     margin: 0 auto;
     height: fit-content;
     width: fit-content;
+    border-radius: 15px;
+    background-color: #00782b;
 }
 
 h1 {
@@ -126,4 +280,40 @@ li {
 h2 {
     font-size: medium;
     font-family: monospace;
+}
+
+#submit {
+    height: 75x;
+    width: 150px;
+    border-radius: 100px;
+    font-family: monospace;
+    font-size: 11pt;
+    border-style: hidden;
+}
+
+.login_profile{
+    border-radius: 50px;
+    text-emphasis-color: green;
+}
+
+.login_profile:hover{
+    border-radius: 50px;
+    -webkit-animation: shadow-pop-bl 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+    animation: shadow-pop-bl 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+    -webkit-animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+/*feed*/
+
+.feedlist{
+    background-color: var(--grey);
+    width: 300px;
+    height: 200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.feedlist.feedimg{
+    max-width: 30fr;
+    max-height: 500px;
 }
