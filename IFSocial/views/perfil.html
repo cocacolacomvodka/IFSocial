@@ -6,10 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../public/css/site.css">
-    <title>IFSocial - feed</title>
+    <title>IFSocial - Meu Perfil</title>
     
 </head>
-
 <body>
     <!--Cabeçário-->
     <div class="header">
@@ -27,27 +26,5 @@
                 <img src="../imgs/perfil/semfoto.png" id="fotoperfil"class="headerimg">
             </a>
         </div>
-    </div>
-    <!--Feed-->
-    <div id="feedlist">
-        
-                <script>
-            /*
-            * criar um elemento
-            * puxar banco de dados
-            // * modificar elemento conforme resultados
-            * adicionar no docuemnto
-            */
-  
-            //post
-            let desc = "olá mundo";
-            let id = "Usuário";
-            let img = "../imgs/icons/perfil.png";
-            for(let i = 0; i<10; i++){
-                var element = document.getElementById('feedlist');
-                element.innerHTML += '<div class="feedpost"><div id="postimg"><img id="postimg" src="'+img+'"></div><div id="postdesc"><p><b>@'+id+'  </b>'+desc+'</p></div><div id="postbuttons"><button><img src="../imgs/icons/like.svg"></button><button><img src="../imgs/icons/comment.svg"></button></div> '
-            }
-        </script>  
-
     </div>
 </body>
