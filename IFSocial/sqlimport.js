@@ -26,4 +26,3 @@ const app = express();
    });
  });
 });
-

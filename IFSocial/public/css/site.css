@@ -149,6 +149,14 @@ html {
     margin-left: 10px;
     margin-right: auto;
     margin-top: 0;
+    display: flex;
+    place-content: center;
+    place-items: center;
+}
+
+.header .headertitle h1{
+    margin: 0;
+    padding: 0;
 }
 
 .header .headerbuttons{
@@ -156,8 +164,8 @@ html {
     height: 50px;
     margin-left: auto;
     margin-right: 20px;
-    align-self: right;
     display: flex;
+    align-items: center;
 }
 
 .header .headerimg{
@@ -314,8 +322,6 @@ fieldset {
 
 #feedlist{
     display: grid;
-    width: fit-content wrap;
-    height: fit-content wrap;
     margin-top: 50px;
     margin: 0 auto;
     position: sticky;
@@ -324,7 +330,7 @@ fieldset {
 .feedpost{
     min-width: 50%;
     max-width: 50%;
-    max-height: 500px;
+    display:grid;
     margin: 0 auto;
     margin-top: 30px;
     border-radius: 25px;
@@ -332,9 +338,12 @@ fieldset {
 }
 
 #postimg{
-    height: 400px;
-    width: 300px;
+    height: 100%;
+    width: 100%;
+    transform: scale(90%);
+    display: block;
     margin: 0 auto;
+    margin-top: 5px;
 }
 #postdesc{
     margin-left: 15px;
@@ -342,5 +351,25 @@ fieldset {
 #postbuttons{
     margin-left: 15px;
     margin-bottom: 15px;
-    
+    border-style: none;
+}
+
+.likebot{
+    height: 30px;
+    width: 30px;
+    border-style: none;
+    margin: 15px;
+}
+
+.likeicon:hover{
+    -webkit-animation: shadow-pop-bl 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+    animation: shadow-pop-bl 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+    -webkit-animation: text-pop-up-top 0.5s cubic-bezier(1.200, 0.460, 0.450, 0.940) both;
+    animation: text-pop-up-top 0.5s cubic-bezier(1.2s00, 0.460, 0.450, 0.940) both;
+}
+
+.likeicon{
+    height: 30px;
+    width: 30px;
+    border-style: none;
 }
