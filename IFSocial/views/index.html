@@ -1,4 +1,4 @@
-<!DOCTYPE=html />
+<!DOCTYPE html>
 <html lang="pt">
 
 <head>
@@ -19,7 +19,7 @@
 <body>
     <!--form de login-->
     <div id="login">
-        <form method="post" action="form.java" id="formlog">
+        <form method="post" action="/login" id="formlog">
             <fieldset>
                 <h4 class="account">Logar</h4>
                 <ul>
@@ -37,15 +37,14 @@
                 </ul>
                 <input type="submit" class="login_profile" value="Logar conta">
             </fieldset>
+        </form>
     </div>
     <!--Botões de seleção login ou Registro-->
     <div id="button">
         <h2>
             Não logado ainda?
         </h2>
-        <a href="/views/register.html">
-        <button id="ShowRegister">Register</button>
-        </a>
+        <button onclick="document.location = '/register.html'" id="ShowRegister">Register</button>
     </div>
 
 </html>
