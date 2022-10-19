@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../public/css/site.css">
+    <link rel="script" href="../db.js">
     <title>IFSocial - Register</title>
 </head>
 <div id="cabecario">
@@ -20,7 +21,7 @@
 <!--Form de register-->
 <div id="register">
     <!--Formulário de registro-->
-    <form method="post" action="form.java" id="formreg">
+    <form method="post" action="../db.js" id="formreg">
         <fieldset>
             <h4 class="account">Criar Conta</h4>
             <ul>
@@ -31,18 +32,18 @@
                 </li>
                 <li>
                     <!--Inserir Email-->
-                    <label for="email">E mail_______</label>
+                    <label for="email">E mail</label>
                     <input type="email" id="email" name="email" class="large" />
                 </li>
                 <li>
                     <!--Inserir senha-->
-                    <label for="senha">Senha________</label>
+                    <label for="senha">Senha</label>
                     <input type="password" id="senha" name="senha" class="large" />
                 </li>
                 <li>
-                    <!--Escolher IF-->
-                    <label for="if">If___________</label>
-                    <input type="text" id="if" name="if" class="large" />
+                    <!--Escolher nick-->
+                    <label for="nickname">Nickname</label>
+                    <input type="text" id="nickname" name="nickname" class="large" />
                 </li>
 
             </ul>
