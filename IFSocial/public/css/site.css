@@ -174,7 +174,7 @@ html {
     height: 50px;
     width: 100%;
     display: flex;
-    background-color: var(--green);
+    background-color: #000000;
     margin: -8px;
     position: fixed;
     top: 0;
@@ -194,6 +194,7 @@ html {
 .header .headertitle h1{
     margin: 0;
     padding: 0;
+    color: #ffffff;
 }
 
 .header .headerbuttons{
@@ -206,14 +207,16 @@ html {
 }
 
 .header .headerimg{
+    color: #ffffff;
     height: 40px;
     width: 40px;
     margin-top: 5px;
     margin-left: 50px;
-    background: var(--green);
+    background: #000000;
 }
 
 .header .headerimg:hover{
+    border-radius: 30px;
     margin-top: 5px;
     background: var(--green);
     -webkit-animation: shadow-pop-bl 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
@@ -310,9 +313,8 @@ html {
     height: fit-content;
     width: fit-content;
     font-family: monospace;
-    outline-style: inherit;
-    border-radius: 15px;
-    border-color: var(--green);
+    display: flex;
+
 }
 
 #formlog {
@@ -320,27 +322,45 @@ html {
     height: fit-content;
     width: fit-content;
     font-family: monospace;
-    border-style: none;
-    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /*formularios*/
 
-fieldset {
+.formulario {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     margin: 0 auto;
     height: fit-content;
     width: fit-content;
-    border-radius: 15px;
-    background-color: var(--green);
+    border: none;
+}
+
+li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.campoform{
+    background-color: var(--greydark);
+    margin-bottom: 2px;
+    border-bottom-width: 1px;
+    border-style: solid;
+    margin-left: 10px;
+
 }
 
 #submit {
     height: 75x;
     width: 150px;
-    border-radius: 100px;
+    border-radius: 50px;
     font-family: monospace;
     font-size: 11pt;
-    border-style: hidden;
+    border-width: 0;
 }
 
 .login_profile{
@@ -408,4 +428,49 @@ fieldset {
     height: 30px;
     width: 30px;
     border-style: none;
+}
+
+/*perfil*/
+#banner{
+    margin-top: 10px;
+    display: block;
+    width: auto;
+    height:20%
+}
+
+#banner #fotobanner{
+    object-fit: cover;
+    width: 100%;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    height: 100px;
+}
+
+#avatar{
+    margin-top: -80px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 500;
+}
+
+#fotoavatar{
+    border-radius: 100%;
+    object-fit: cover;
+    height: 200px;
+    width: 200px;
+}
+
+#nomeuser{
+    margin: 0 auto;
+    color: white;
+    display: flex;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#nomeuser p{
+    text-align: center;
 }
