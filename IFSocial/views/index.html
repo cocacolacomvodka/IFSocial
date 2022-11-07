@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../public/css/site.css">
+    <link rel="stylesheet" text="text/css" href="../public/css/site.css">
+    <link rel="shortcut icon" href="../public/imgs/icons/ifnews.svg" type="image/x-icon" />
     <title>IFSocial</title>
 </head>
 
@@ -20,31 +21,31 @@
     <!--form de login-->
     <div id="login">
         <form method="post" action="/login" id="formlog">
-            <fieldset>
+            <fieldset class="formulario">
                 <h4 class="account">Logar</h4>
                 <ul>
 
                     <li>
                         <!--Inserir Email-->
-                        <label for="email">E mail_______</label>
-                        <input type="email" id="email" name="email" class="large" />
+                        <label for="email">E mail</label>
+                        <input type="email" id="email" name="email" class="campoform" />
                     </li>
                     <li>
                         <!--Inserir senha-->
-                        <label for="senha">Senha________</label>
-                        <input type="password" id="senha" name="senha" class="large" />
+                        <label for="senha">Senha</label>
+                        <input type="password" id="senha" name="senha" class="campoform" />
                     </li>
                 </ul>
-                <input type="submit" class="login_profile" value="Logar conta">
+                <input type="submit" id="submit" class="login_profile" value="Logar conta">
             </fieldset>
         </form>
     </div>
-    <!--Botões de seleção login ou Registro-->
+    <!--Botão para se registrar-->
     <div id="button">
         <h2>
             Não logado ainda?
         </h2>
-        <button onclick="document.location = '/register.html'" id="ShowRegister">Register</button>
+        <button onclick="document.location = '/views/register.html'" id="ShowRegister">Register</button>
     </div>
 
 </html>

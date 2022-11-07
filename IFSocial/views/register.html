@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../public/css/site.css">
+    <link rel="script" href="../db.js">
+    <link rel="shortcut icon" href="../public/imgs/icons/ifnews.svg" type="image/x-icon" />
     <title>IFSocial - Register</title>
 </head>
 <div id="cabecario">
@@ -13,45 +15,49 @@
         IFSocial
     </h1>
 
-    <h2 id="registrotexttitle">
-        Registro
-    </h2>
 </div>
 <!--Form de register-->
 <div id="register">
     <!--Formulário de registro-->
-    <form method="post" action="form.java" id="formreg">
-        <fieldset>
-            <h4 class="account">Criar Conta</h4>
+    <form method="post" action="../db.js" id="formreg">
+        <fieldset class="formulario">
+            <script>
+                var nome = document.getElementById('nome');
+                var nickname = document.getElementById('nickname');
+                var senha = document.getElementById('senha');
+                var email = document.getElementById('email')
+
+            </script>
+            <h4 class="account">Registrar</h4>
             <ul>
                 <li>
                     <!--Inserir Nome-->
                     <label for="nome">Nome completo</label>
-                    <input type="text" id="nome" name="nome" class="large" />
+                    <input type="text" id="nome" name="nome" class="campoform" />
                 </li>
                 <li>
                     <!--Inserir Email-->
-                    <label for="email">E mail_______</label>
-                    <input type="email" id="email" name="email" class="large" />
+                    <label for="email">E mail</label>
+                    <input type="email" id="email" name="email" class="campoform" />
                 </li>
                 <li>
                     <!--Inserir senha-->
-                    <label for="senha">Senha________</label>
-                    <input type="password" id="senha" name="senha" class="large" />
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha" class="campoform" />
                 </li>
                 <li>
-                    <!--Escolher IF-->
-                    <label for="if">If___________</label>
-                    <input type="text" id="if" name="if" class="large" />
+                    <!--Escolher nick-->
+                    <label for="nickname">Nickname</label>
+                    <input type="text" id="nickname" name="nickname" class="campoform" />
                 </li>
 
             </ul>
-            <input type="submit" class="login_profile" value="criar conta">
+            <input type="submit" id="submit" class="login_profile" value="criar conta">
         </fieldset>
 </div>
 <div id="button">
     <h2>Já tem alguma conta?</h2>
-    <a href="/views/login.html">
+    <a href="/views/index.html">
         <button id="ShowLogin">Login</button>
         </a>
 </div>

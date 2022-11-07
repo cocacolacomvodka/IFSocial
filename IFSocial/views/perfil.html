@@ -1,0 +1,58 @@
+!DOCTYPE=html
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/css/site.css">
+    <link rel="shortcut icon" href="../public/imgs/icons/ifnews.svg" type="image/x-icon">
+    <title>IFSocial - Meu Perfil</title>
+    
+</head>
+<body>
+    <!--Cabeçário-->
+    <div class="header">
+        <div class="headertitle"><h1>
+            IFSocial
+        </h1></div>
+        <div class="headerbuttons">
+            <a href="ifnews.html'" id="botaoifnews">
+                <img src="../public/imgs/icons/ifnews.svg" class="headerimg">
+            </a>
+            <a href="chats.html'" id="botaochats">
+                    <img src="../public/imgs/icons/chaticon.svg" class="headerimg">
+            </a>
+            <a href="perfil.html'" id="botaoperfil">
+                <img src="../public/imgs/icons/semfot.svg" id="fotoperfil"class="headerimg">
+            </a>
+        </div>
+    </div>
+
+    <div id="apresentacaoperfil">
+        <div id="banner">
+            <img src="../public/imgs/Untitled.png" id="fotobanner">
+        </div>
+        <div id="avatar">
+            <img src="../public/imgs/Untitled.png" id="fotoavatar">
+        </div>
+        <div id="nomeuser">
+            <h1>@ +Nome do Usuário</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi ipsum quibusdam minima iste inventore non nulla animi labore eligendi, aliquam velit at nihil ipsam id cumque? Sed sapiente explicabo rem.</p>
+        </div>
+    </div>
+
+    <div id="feedlist">
+        
+        <script>
+    //post
+    let desc = "olá mundo";
+    let id = "Usuário";
+    let img = "../public/imgs/Untitled.png";
+    for(let i = 0; i<10; i++){
+        var element = document.getElementById('feedlist');
+        element.innerHTML += '<div class="feedpost"><div id="postimg"><img id="postimg" src="'+img+'"></div><div id="postdesc"><p><b>&#127760'+id+'  </b>'+desc+'</p></div><div id="postbuttons"><button class="likebot"><img src="../public/imgs/icons/like.svg" class="likeicon"></button><button class="likebot"><img src="../public/imgs/icons/comentarios.svg" class="likeicon"></button></div> '
+    }
+</script>  
+</div>
+</body>
