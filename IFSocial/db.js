@@ -17,12 +17,6 @@ async function insertUser(user){
 
 /*pegar no html e enviar pro db*/
 
-var register = document.getElementById('formreg');
-var nome = document.getElementById('nome');
-var nickname = document.getElementById('nickname');
-var senha = document.getElementById('senha');
-var email = document.getElementById('email')
-
 register.addEventListener('submit', function(e) {
     // alerta o valor do campo
     user.nome=nome

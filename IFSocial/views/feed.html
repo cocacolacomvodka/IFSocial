@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../public/css/site.css">
+    <link rel="shortcut icon" href="../public/imgs/icons/ifnews.svg" type="image/x-icon">
     <link rel="script" href="../sqlimport.js">
     <title>IFSocial - feed</title>
     
@@ -29,25 +30,30 @@
             </a>
         </div>
     </div>
+    <div id="corpo">
+    <div id="newsline">
+        <rssapp-list id="gHOkQ2CjJU8NiIKT"></rssapp-list><script src="https://widget.rss.app/v1/list.js" type="text/javascript" async></script>
+    </div>
     <!--Feed-->
-    <div id="feedlist">
+        <div id="feedlist">
         
                 <script>
-            /*
-            * criar um elemento
-            * puxar banco de dados
-            // * modificar elemento conforme resultados
-            * adicionar no docuemnto
-            */
+               /*
+                * criar um elemento
+                * puxar banco de dados
+                * modificar elemento conforme resultados
+                * adicionar no docuemnto
+                */
 
-            //post
-            let desc = "olá mundo";
-            let id = "Usuário";
-            let img = "../public/imgs/Untitled.png";
-            for(let i = 0; i<10; i++){
-                var element = document.getElementById('feedlist');
-                element.innerHTML += '<div class="feedpost"><div id="postimg"><img id="postimg" src="'+img+'"></div><div id="postdesc"><p><b>&#127760'+id+'  </b>'+desc+'</p></div><div id="postbuttons"><button class="likebot"><img src="../public/imgs/icons/like.svg" class="likeicon"></button><button class="likebot"><img src="../public/imgs/icons/comentarios.svg" class="likeicon"></button></div> '
-            }
-        </script>  
+                //post
+                let desc = "olá mundo";
+                let id = "Usuário";
+                let img = "../public/imgs/Untitled.png";
+                for(let i = 0; i<10; i++){
+                    var element = document.getElementById('feedlist');
+                    element.innerHTML += '<div class="feedpost"><div id="postimg"><img id="postimg" src="'+img+'"></div><div id="postdesc"><p><b>&#127760'+id+'  </b>'+desc+'</p></div><div id="postbuttons"><button class="likebot"><img src="../public/imgs/icons/like.svg" class="likeicon"></button><button class="likebot"><img src="../public/imgs/icons/comentarios.svg" class="likeicon"></button></div> '
+                }
+                </script>  
+         </div>
     </div>
 </body>
