@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" text="text/css" href="/css/site.css">
+    <link rel="shortcut icon" href="w/imgs/icons/ifnews.svg" type="image/x-icon" />
+    <title>IFSocial</title>
+</head>
+
+<!--cabeçario-->
+<div id="cabecario">
+    <h1 id="ifsocial">
+        IFSocial
+    </h1>
+</div>
+
+<body>
+    <!--form de login-->
+    <div id="login">
+        <form method="post" action="/auth" id="formlog">
+            <fieldset class="formulario">
+                <h4 class="account">Logar</h4>
+                <ul>
+                    <li>
+                        <!--Inserir Email-->
+                        <label for="email">E mail</label>
+                        <input type="email" id="email" name="email" class="campoform" />
+                    </li>
+                    <li>
+                        <!--Inserir senha-->
+                        <label for="senha">Senha</label>
+                        <input type="password" id="senha" name="senha" class="campoform" />
+                    </li>
+                </ul>
+                <input type="submit" id="submit" class="login_profile" value="Logar conta">
+            </fieldset>
+        </form>
+    </div>
+    <!--Botão para se registrar-->
+    <div id="button">
+        <h2>
+            Não possui uma conta ainda?
+        </h2>
+        <button onclick="document.location = '/views/register.html'" id="ShowRegister">Register</button>
+    </div>
+
+</html>
