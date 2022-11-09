@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../public/css/site.css">
-    <link rel="shortcut icon" href="../public/imgs/icons/ifnews.svg" type="image/x-icon">
+    <link rel="stylesheet" href="/css/site.css">
+    <link rel="shortcut icon" href="/imgs/icons/ifnews.svg" type="image/x-icon">
     <title>IFSocial - Meu Perfil</title>
     
 </head>
@@ -18,23 +18,23 @@
         </h1></div>
         <div class="headerbuttons">
             <a href="ifnews.html'" id="botaoifnews">
-                <img src="../public/imgs/icons/ifnews.svg" class="headerimg">
+                <img src="/imgs/icons/ifnews.svg" class="headerimg">
             </a>
             <a href="chats.html'" id="botaochats">
-                    <img src="../public/imgs/icons/chaticon.svg" class="headerimg">
+                    <img src="/imgs/icons/chaticon.svg" class="headerimg">
             </a>
             <a href="perfil.html'" id="botaoperfil">
-                <img src="../public/imgs/icons/semfot.svg" id="fotoperfil"class="headerimg">
+                <img src="/imgs/icons/semfot.svg" id="fotoperfil"class="headerimg">
             </a>
         </div>
     </div>
 
     <div id="apresentacaoperfil">
         <div id="banner">
-            <img src="../public/imgs/Untitled.png" id="fotobanner">
+            <img src="/imgs/Untitled.png" id="fotobanner">
         </div>
         <div id="avatar">
-            <img src="../public/imgs/Untitled.png" id="fotoavatar">
+            <img src="/imgs/Untitled.png" id="fotoavatar">
         </div>
         <div id="nomeuser">
             <h1>@ +Nome do Usuário</h1>
@@ -48,10 +48,10 @@
     //post
     let desc = "olá mundo";
     let id = "Usuário";
-    let img = "../public/imgs/Untitled.png";
+    let img = "/imgs/Untitled.png";
     for(let i = 0; i<10; i++){
         var element = document.getElementById('feedlist');
-        element.innerHTML += '<div class="feedpost"><div id="postimg"><img id="postimg" src="'+img+'"></div><div id="postdesc"><p><b>&#127760'+id+'  </b>'+desc+'</p></div><div id="postbuttons"><button class="likebot"><img src="../public/imgs/icons/like.svg" class="likeicon"></button><button class="likebot"><img src="../public/imgs/icons/comentarios.svg" class="likeicon"></button></div> '
+        element.innerHTML += '<div class="feedpost"><div id="postimg"><img id="postimg" src="'+img+'"></div><div id="postdesc"><p><b>&#127760'+id+'  </b>'+desc+'</p></div><div id="postbuttons"><button class="likebot"><img src="/imgs/icons/like.svg" class="likeicon"></button><button class="likebot"><img src="/imgs/icons/comentarios.svg" class="likeicon"></button></div> '
     }
 </script>  
 </div>

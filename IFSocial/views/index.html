@@ -1,51 +1,59 @@
-<!DOCTYPE html>
+!DOCTYPE=html
 <html lang="pt">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" text="text/css" href="../public/css/site.css">
-    <link rel="shortcut icon" href="../public/imgs/icons/ifnews.svg" type="image/x-icon" />
-    <title>IFSocial</title>
+    <link rel="stylesheet" href="/css/site.css">
+    <link rel="shortcut icon" href="/imgs/icons/ifnews.svg" type="image/x-icon">
+    <link rel="script" href="../sqlimport.js">
+    <title>IFSocial - feed</title>
+    
 </head>
 
-<!--cabeçario-->
-<div id="cabecario">
-    <h1 id="ifsocial">
-        IFSocial
-    </h1>
-</div>
-
 <body>
-    <!--form de login-->
-    <div id="login">
-        <form method="post" action="/login" id="formlog">
-            <fieldset class="formulario">
-                <h4 class="account">Logar</h4>
-                <ul>
-
-                    <li>
-                        <!--Inserir Email-->
-                        <label for="email">E mail</label>
-                        <input type="email" id="email" name="email" class="campoform" />
-                    </li>
-                    <li>
-                        <!--Inserir senha-->
-                        <label for="senha">Senha</label>
-                        <input type="password" id="senha" name="senha" class="campoform" />
-                    </li>
-                </ul>
-                <input type="submit" id="submit" class="login_profile" value="Logar conta">
-            </fieldset>
-        </form>
+    <!--Cabeçário-->
+    <div class="header">
+        <div class="headertitle"><h1>
+            IFSocial
+        </h1></div>
+        <div class="headerbuttons">
+            <a href="/views/ifnews.html" id="botaoifnews">
+                <img src="/imgs/icons/ifnews.svg" class="headerimg">
+            </a>
+            <a href="/views/chats.html" id="botaochats">
+                    <img src="/imgs/icons/chaticon.svg" class="headerimg">
+            </a>
+            <a href="/views/perfil.html" id="botaoperfil">
+                <img src="/imgs/icons/semfot.svg" id="fotoperfil"class="headerimg">
+            </a>
+        </div>
     </div>
-    <!--Botão para se registrar-->
-    <div id="button">
-        <h2>
-            Não logado ainda?
-        </h2>
-        <button onclick="document.location = '/views/register.html'" id="ShowRegister">Register</button>
+    <div id="corpo">
+    <div id="newsline">
+        <rssapp-list id="gHOkQ2CjJU8NiIKT"></rssapp-list><script src="https://widget.rss.app/v1/list.js" type="text/javascript" async></script>
     </div>
+    <!--Feed-->
+        <div id="feedlist">
+        
+                <script>
+               /*
+                * criar um elemento
+                * puxar banco de dados
+                * modificar elemento conforme resultados
+                * adicionar no docuemnto
+                */
 
-</html>
+                //post
+                let desc = "olá mundo";
+                let id = "Usuário";
+                let img = "/imgs/Untitled.png";
+                for(let i = 0; i<10; i++){
+                    var element = document.getElementById('feedlist');
+                    element.innerHTML += '<div class="feedpost"><div id="postimg"><img id="postimg" src="'+img+'"></div><div id="postdesc"><p><b>&#127760'+id+'  </b>'+desc+'</p></div><div id="postbuttons"><button class="likebot"><img src="/imgs/icons/like.svg" class="likeicon"></button><button class="likebot"><img src="/imgs/icons/comentarios.svg" class="likeicon"></button></div> '
+                }
+                </script>  
+         </div>
+    </div>
+</body>

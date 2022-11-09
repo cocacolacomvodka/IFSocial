@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../public/css/site.css">
+    <link rel="stylesheet" href="/css/site.css">
     <link rel="script" href="../db.js">
-    <link rel="shortcut icon" href="../public/imgs/icons/ifnews.svg" type="image/x-icon" />
+    <link rel="shortcut icon" href="/imgs/icons/ifnews.svg" type="image/x-icon" />
     <title>IFSocial - Register</title>
 </head>
 <div id="cabecario">
@@ -19,7 +19,7 @@
 <!--Form de register-->
 <div id="register">
     <!--Formulário de registro-->
-    <form method="post" action="../db.js" id="formreg">
+    <form method="post" action="/register" id="formreg">
         <fieldset class="formulario">
             <script>
                 var nome = document.getElementById('nome');
@@ -36,6 +36,11 @@
                     <input type="text" id="nome" name="nome" class="campoform" />
                 </li>
                 <li>
+                    <!--Escolher nick-->
+                    <label for="nickname">Nickname</label>
+                    <input type="text" id="nickname" name="nickname" class="campoform" />
+                </li>
+                <li>
                     <!--Inserir Email-->
                     <label for="email">E mail</label>
                     <input type="email" id="email" name="email" class="campoform" />
@@ -45,11 +50,7 @@
                     <label for="senha">Senha</label>
                     <input type="password" id="senha" name="senha" class="campoform" />
                 </li>
-                <li>
-                    <!--Escolher nick-->
-                    <label for="nickname">Nickname</label>
-                    <input type="text" id="nickname" name="nickname" class="campoform" />
-                </li>
+                
 
             </ul>
             <input type="submit" id="submit" class="login_profile" value="criar conta">
@@ -57,7 +58,7 @@
 </div>
 <div id="button">
     <h2>Já tem alguma conta?</h2>
-    <a href="/views/index.html">
+    <a href="/views/login.html">
         <button id="ShowLogin">Login</button>
         </a>
 </div>
